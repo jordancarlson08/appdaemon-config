@@ -1,0 +1,8 @@
+2018-12-11 22:40:55.323877 ERROR AppDaemon: Required attribute not set or obtainable from any plugin: latitude
+2018-12-11 22:40:55.325002 ERROR AppDaemon: AppDaemon is terminating
+2018-12-11 22:40:55.325944 ERROR AppDaemon: Required attribute not set or obtainable from any plugin: longitude
+2018-12-11 22:40:55.326932 ERROR AppDaemon: AppDaemon is terminating
+2018-12-11 22:40:55.327869 ERROR AppDaemon: Required attribute not set or obtainable from any plugin: elevation
+2018-12-11 22:40:55.328637 ERROR AppDaemon: AppDaemon is terminating
+2018-12-11 22:40:55.329560 ERROR AppDaemon: Required attribute not set or obtainable from any plugin: time_zone
+2018-12-11 22:40:55.330310 ERROR AppDaemon: AppDaemon is terminating

@@ -1,0 +1,11 @@
+appdaemon:
+  threads: 10
+  plugins:
+    HASS:
+      type: hass
+      ha_url: https://home.jordancarlson.me
+      token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiI1YWMyNzY2ZmYzNDU0NmFiYTk3MzFiYmQ3NjViMjFkNiIsImV4cCI6MTg1OTkyNzA4NywiaWF0IjoxNTQ0NTY3MDg3fQ.kfVIub43c1rDRBB0GpvdS1qnR9UmbtS03S3rgT9fBuA
+log:
+  errorfile: /home/homeassistant/appdaemon/logs/error.log
+  logfile: /home/homeassistant/appdaemon/logs/appdaemon.log
+  diagfile: /home/homeassistant/appdaemon/logs/diag.log
