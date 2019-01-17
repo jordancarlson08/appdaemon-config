@@ -17,7 +17,7 @@ class GarageDoor(hass.Hass):
 
     def garage_state_changed(self, entity, attribute, old, new, kwargs):
         if (new == 'open'):
-            self.handle = self.run_in(self.notify_garage_open, 300)
+            self.handle = self.run_in(self.notify_garage_open, 10)
         else:
             self.cancel_timer(self.handle)
         time = datetime.datetime.now().time().strftime('%H:%M')

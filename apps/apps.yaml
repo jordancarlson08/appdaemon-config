@@ -1,7 +1,7 @@
 hello_world:
   module: hello
   class: HelloWorld
-garage_door_two:
+garage_door:
   module: garage
   class: GarageDoor
   name: Garage Door
