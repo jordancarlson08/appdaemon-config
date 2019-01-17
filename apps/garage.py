@@ -14,6 +14,8 @@ class GarageDoor(hass.Hass):
         self.listen_state(self.garage_state_changed, self.args["entity_id"])
         self.listen_event(self.close_garage, event="html5_notification.clicked", action="garage_close_" + self.args["entity_id"])
 
+        self.call_service("notify/html5_notifier", title="Garage", message="Garage App Started")
+
 
     def garage_state_changed(self, entity, attribute, old, new, kwargs):
         if (new == 'open'):
@@ -28,8 +30,8 @@ class GarageDoor(hass.Hass):
         else:
             actionData = { "tag" : "garage_door_" + self.args["entity_id"] }
             notificationData = {}
-        self.call_service("notify/html5", title="Garage", message=self.args["name"] + " " + new + " at " + time, data=actionData)
-        self.call_service("notify/ios", title="Garage", message=self.args["name"] + " " + new + " at " + time, data=notificationData)
+        self.call_service("notify/html5_notifier", title="Garage", message=self.args["name"] + " " + new + " at " + time, data=actionData)
+
 
     def notify_garage_open(self, kwargs):
         actionData={"tag" : "garage_door_" + self.args["entity_id"], "actions": [ {"action": "garage_close_" + self.args["entity_id"], "title": "Close" } ] } 
