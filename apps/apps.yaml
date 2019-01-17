@@ -1,3 +1,8 @@
 hello_world:
   module: hello
   class: HelloWorld
+garage_door_two:
+  module: garage
+  class: GarageDoor
+  name: Garage Door
+  entity_id: cover.garage_door
