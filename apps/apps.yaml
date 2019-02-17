@@ -6,3 +6,7 @@ garage_door:
   class: GarageDoor
   name: Garage Door
   entity_id: cover.garage_door
+brightness:
+  module: brightness
+  class: Brightness
+  entity_id: light.master_toilet
