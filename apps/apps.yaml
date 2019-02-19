@@ -10,3 +10,6 @@ brightness:
   module: brightness
   class: Brightness
   entity_id: light.master_toilet
+  brightness: 20
+  start: "21:00:00"
+  stop: "06:00:00"
